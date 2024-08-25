@@ -7,6 +7,9 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+    routes:
+      - id: microservice_route
+        uri: lb://MICROSERVICE_WORKSHP_MAVEN
 
   config:
     enabled: false
