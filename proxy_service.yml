@@ -10,6 +10,9 @@ spring:
     routes:
       - id: microservice_route
         uri: lb://MICROSERVICE_WORKSHP_MAVEN
+        predicates:
+          - Path=/categories/**
+
 
   config:
     enabled: false
